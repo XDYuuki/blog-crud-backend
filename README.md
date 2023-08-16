@@ -39,4 +39,5 @@ Gabriel Rocha - gabriel.lbr@outlook.com<br>
 [GitHub](https://github.com/XDYuuki)
 
 Larissa Carvalho - lalahcarva@gmail.com<br>
-[Linkedin](https://github.com/lalahcarva)
+[Linkedin](https://www.linkedin.com/in/larissacr/)<br>
+[GitHub](https://github.com/lalahcarva)
