@@ -34,9 +34,9 @@ Swagger route: [Swagger](http://localhost:3000/swagger/)
 
 ## AUTHORS
 
-Gabriel Rocha - gabriel.lbr@outlook.com
-[Linkedin](https://www.linkedin.com/in/gabriellbr/) - 
+Gabriel Rocha - gabriel.lbr@outlook.com<br>
+[Linkedin](https://www.linkedin.com/in/gabriellbr/)<br>
 [GitHub](https://github.com/XDYuuki)
 
-Larissa Carvalho - lalahcarva@gmail.com
+Larissa Carvalho - lalahcarva@gmail.com<br>
 [Linkedin](https://github.com/lalahcarva)
