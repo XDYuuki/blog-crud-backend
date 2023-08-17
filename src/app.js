@@ -26,8 +26,8 @@ class AppController {
     constructor() {
         this.app = express();
 
-        this.useRouts();
         this.midlewares();
+        this.useRouts();
     }
 
     useRouts() {
@@ -35,12 +35,12 @@ class AppController {
     }
 
     midlewares() {
+        this.app.use(bodyParser.json());
+        this.app.use(bodyParser.urlencoded({ extended: true }));
         this.app.use(express.static("public"));
         this.app.use(cors());
-        this.app.use(bodyParser.urlencoded({ extended: true }));
-        this.app.use(bodyParser.json());
 
-        this.app.use("/swagger", swaggerUI.serve, swaggerUI.setup(specs));
+        this.app.use("/api", swaggerUI.serve, swaggerUI.setup(specs));
     }
 }
 

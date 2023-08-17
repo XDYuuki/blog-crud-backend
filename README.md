@@ -13,6 +13,8 @@ Make sure you are with this server running when you are testing the frontend app
 * swagger
 * mysql
 * cors
+* body-parser
+* swagger
 
 ## HOW TO USE IT
 
@@ -20,7 +22,9 @@ Make sure you are with this server running when you are testing the frontend app
 ```sh
     npm install
 ```
-2. Run the followed command to make it work:
+2. Make sure that the mysql database is running before run the backend
+
+3. Run the followed command to make it work:
 
 ```sh
     npm run dev
@@ -29,7 +33,7 @@ Make sure you are with this server running when you are testing the frontend app
 ## REQUEST DOCUMENTATION
 
 After run the project, you can access this route to check the swagger documentation for this API
-Swagger route: [Swagger](http://localhost:3000/swagger/)
+Swagger route: [Swagger](http://localhost:3000/)
 
 
 ## AUTHORS
