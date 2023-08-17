@@ -33,7 +33,7 @@ Make sure you are with this server running when you are testing the frontend app
 ## REQUEST DOCUMENTATION
 
 After run the project, you can access this route to check the swagger documentation for this API
-Swagger route: [Swagger rout documentation](http://localhost:3000/api)
+Swagger route: [Swagger routes documentation](http://localhost:3000/api)
 
 
 ## AUTHORS
