@@ -1,4 +1,4 @@
-# INTRODUCTION
+# BLOG CRUD BACKEND SERVER
 
 Web Application desgin class - Assignment 04
 
@@ -7,7 +7,7 @@ This is only a backend. You will find the rest of this project functionality acc
 
 Make sure you are with this server running when you are testing the frontend application.
 
-## DEPENDENCIES
+## 1.DEPENDENCIES
 
 * express.js
 * swagger
@@ -16,7 +16,7 @@ Make sure you are with this server running when you are testing the frontend app
 * body-parser
 * swagger
 
-## HOW TO USE IT
+## 2.HOW TO USE IT
 
 1. Isntall the dependencies running:
 ```sh
@@ -30,13 +30,13 @@ Make sure you are with this server running when you are testing the frontend app
     npm run dev
 ```
 
-## REQUEST DOCUMENTATION
+## 3.REQUEST DOCUMENTATION
 
 After run the project, you can access this route to check the swagger documentation for this API
 Swagger route: [Swagger routes documentation](http://localhost:3000/api)
 
 
-## AUTHORS
+## 4.AUTHORS
 
 Gabriel Rocha - gabriel.lbr@outlook.com<br>
 [Linkedin](https://www.linkedin.com/in/gabriellbr/)<br>
