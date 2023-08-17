@@ -9,9 +9,32 @@ class PostController {
         connection.query(queryStr, function (error, results, fields) {
             if (error) throw error;
 
-            console.log("The result is: ", results);
+            // console.log("The result is: ", results);
+            let postList = [];
 
-            response.send({ posts: results });
+            results.forEach((element) => {
+                queryStr = `SELECT * FROM author WHERE id=${element.author_id}`;
+
+                connection.query(queryStr, function (error, results, fields) {
+                    if (error) throw error;
+
+                    // console.log("Author name result:", results);
+                    // console.log("Author name:", results[0].name);
+
+                    let postObject = {
+                        id: element.id,
+                        title: element.title,
+                        content: element.content,
+                        rate: element.rate,
+                        author_id: element.author_id,
+                        autorName: results[0].name,
+                    };
+                    postList.push(postObject);
+                });
+            });
+
+            console.log("list to send: ", postList);
+            response.send({ posts: postList });
             return;
         });
     };
@@ -77,7 +100,8 @@ class PostController {
             request.body.content &&
             request.body.authorId
         ) {
-            let queryStr = `INSERT INTO posts (id, title, content, rate, author_id) VALUES (NULL, '${request.body.title}', '${request.body.content}', NULL, '${request.body.authorId}')`;
+            let queryStr = `INSERT INTO posts (id, title, content, rate, author_id) VALUES (NULL, "${request.body.title}", "${request.body.content}", NULL, "${request.body.authorId}")`;
+            console.log("QueryStr:", queryStr);
             connection.query(queryStr, function (error, results, fields) {
                 if (error) throw error;
 

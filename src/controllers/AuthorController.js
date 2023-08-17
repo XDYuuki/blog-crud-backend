@@ -14,7 +14,16 @@ class AuthorController {
 
                 console.log("The result is: ", results);
 
-                response.send({ msg: `The author was created successfully` });
+                queryStr = `SELECT * FROM author WHERE email='${request.body.email}'`;
+                connection.query(queryStr, function (error, results, fields) {
+                    if (error) throw error;
+
+                    response.send({
+                        msg: `The author was created successfully`,
+                        author: results,
+                    });
+                });
+
                 return;
             });
         } else {
